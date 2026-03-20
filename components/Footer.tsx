@@ -61,19 +61,19 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-190 rounded-t-[5%]">
+    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-190 rounded-t-[30px] md:rounded-t-[50px]">
       {/* Background image */}
       <Image
         src="/images/footerImage.png"
         alt=""
         fill
-        className="object-cover"
+        className="object-cover object-top md:object-center"
         aria-hidden="true"
       />
 
       {/* Warm dark overlay */}
       <div
-        className="absolute inset-0 z-10"
+        className="absolute inset-0 z-20"
         style={{ backgroundColor: "rgba(30, 40, 30, 0.45)" }}
       />
 
@@ -125,7 +125,8 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="font-dm-sans text-[11px] text-cream/85 tracking-wide">
-          © {new Date().getFullYear()} Giulia Therapy. Tutti i diritti riservati.
+          © {new Date().getFullYear()} Giulia Therapy. Tutti i diritti
+          riservati.
         </p>
       </div>
     </footer>

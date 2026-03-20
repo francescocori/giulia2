@@ -79,13 +79,19 @@ export default function Navbar() {
             }`}
           >
             <span
-              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+              className={
+                "block h-0.5 w-6 transition-colors duration-300 bg-forest"
+              }
             />
             <span
-              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+              className={
+                "block h-0.5 w-6 transition-colors duration-300 bg-forest"
+              }
             />
             <span
-              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+              className={
+                "block h-0.5 w-6 transition-colors duration-300 bg-forest"
+              }
             />
           </button>
         </div>
@@ -102,7 +108,7 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setMenuOpen(false)}
-            className="font-cormorant text-2xl font-semibold tracking-wide text-cream"
+            className="font-cormorant text-2xl font-semibold tracking-wide text-forest"
           >
             Giulia
           </a>
@@ -118,7 +124,7 @@ export default function Navbar() {
               stroke="currentColor"
               strokeWidth="1.6"
               strokeLinecap="round"
-              className="w-6 h-6 text-cream"
+              className="w-6 h-6 text-forest"
             >
               <path d="M18 6L6 18M6 6l12 12" />
             </svg>
@@ -139,7 +145,7 @@ export default function Navbar() {
                 style={{
                   transitionDelay: menuOpen ? `${i * 50 + 80}ms` : "0ms",
                 }}
-                className={`font-cormorant text-4xl font-semibold py-2.5 transition-all duration-500 text-cream/80 hover:text-cream ${
+                className={`font-cormorant text-4xl font-semibold py-2.5 transition-all duration-500 text-forest ${
                   menuOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-4"
@@ -155,7 +161,7 @@ export default function Navbar() {
             href="#contact"
             onClick={() => setMenuOpen(false)}
             style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
-            className={`font-dm-sans text-sm rounded-full px-6 py-3.5 text-center transition-all duration-500 self-start text-sage bg-cream hover:bg-mist ${
+            className={`font-dm-sans text-sm rounded-full px-6 py-3.5 text-center transition-all duration-500 self-start text-sage bg-forest hover:bg-mist ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
             }`}
           >
