@@ -41,7 +41,7 @@ export default function Hero() {
           {/* CTA */}
           <a
             href="#contact"
-            className="inline-block font-dm-sans text-sm text-cream bg-sage rounded-full px-7 py-3 transition-all duration-200 hover:bg-forest"
+            className="inline-block font-dm-sans text-sm text-cream  rounded-full px-7 py-3 transition-all duration-200 bg-forest"
           >
             Prenota una chiamata gratuita
           </a>

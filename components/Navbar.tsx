@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { label: "Chi sono", href: "#about" },
   { label: "Servizi", href: "#services" },
-  { label: "Chi aiuto", href: "#who-i-help" },
+  { label: "Come funziona", href: "#come-funziona" },
   { label: "Contatti", href: "#contact" },
 ];
 
@@ -21,7 +21,9 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   return (
@@ -37,7 +39,7 @@ export default function Navbar() {
           <a
             href="#"
             className={`font-cormorant text-2xl font-semibold tracking-wide transition-colors duration-300 ${
-              scrolled ? "text-cream" : "text-forest"
+              scrolled ? "text-forest" : "text-forest"
             }`}
           >
             Giulia
@@ -50,9 +52,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={`font-dm-sans text-sm transition-colors duration-300 ${
-                  scrolled
-                    ? "text-cream/80 hover:text-cream"
-                    : "text-sage hover:text-forest"
+                  scrolled ? "text-forest" : "text-forest"
                 }`}
               >
                 {link.label}
@@ -62,9 +62,7 @@ export default function Navbar() {
             <a
               href="#contact"
               className={`font-dm-sans text-sm rounded-full px-5 py-2 transition-all duration-300 ${
-                scrolled
-                  ? "text-sage bg-cream hover:bg-mist"
-                  : "text-cream bg-sage hover:bg-forest"
+                scrolled ? "text-sage bg-forest " : "text-cream bg-forest"
               }`}
             >
               Prenota una chiamata
@@ -80,9 +78,15 @@ export default function Navbar() {
               menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-            <span className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`} />
-            <span className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`} />
-            <span className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`} />
+            <span
+              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+            />
+            <span
+              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+            />
+            <span
+              className={`block h-0.5 w-6 transition-colors duration-300 ${scrolled ? "bg-cream" : "bg-forest"}`}
+            />
           </button>
         </div>
       </header>
@@ -132,9 +136,13 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                style={{ transitionDelay: menuOpen ? `${i * 50 + 80}ms` : "0ms" }}
+                style={{
+                  transitionDelay: menuOpen ? `${i * 50 + 80}ms` : "0ms",
+                }}
                 className={`font-cormorant text-4xl font-semibold py-2.5 transition-all duration-500 text-cream/80 hover:text-cream ${
-                  menuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+                  menuOpen
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-4"
                 }`}
               >
                 {link.label}

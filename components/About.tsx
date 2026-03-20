@@ -14,23 +14,23 @@ export default function About() {
           {/* Right — content */}
           <div className="flex flex-col gap-5">
             {/* Eyebrow */}
-            <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-cream/60">
+            <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40">
               Chi sono
             </p>
 
             {/* Heading */}
-            <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-cream leading-tight">
+            <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight">
               Uno spazio sicuro nasce da una connessione autentica
             </h2>
 
             {/* Bio */}
-            <p className="font-dm-sans text-sm leading-relaxed text-cream/70">
+            <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
               Sono una psicologa clinica abilitata con oltre dieci anni di esperienza
               nel supportare persone che affrontano ansia, burnout, lutto e cambiamenti
               di vita. Il mio approccio è caldo, privo di giudizio e fondato sulla
               convinzione che la guarigione avviene nella relazione.
             </p>
-            <p className="font-dm-sans text-sm leading-relaxed text-cream/70">
+            <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
               Che tu stia attraversando un momento difficile o ti senta semplicemente
               bloccato, ti offro uno spazio dove rallentare, essere ascoltato e
               ricominciare a connetterti con te stesso — ai tuoi tempi.

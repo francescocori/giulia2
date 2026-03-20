@@ -53,13 +53,13 @@ export default function Services() {
 
         {/* Header */}
         <div className="text-center mb-16 md:mb-20">
-          <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-cream/60 mb-4">
+          <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
             Cosa offro
           </p>
-          <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-cream mb-5">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest mb-5">
             Le aree in cui posso aiutarti
           </h2>
-          <p className="font-dm-sans text-sm leading-relaxed text-cream/60 max-w-md mx-auto">
+          <p className="font-dm-sans text-sm leading-relaxed text-forest/55 max-w-md mx-auto">
             Il percorso di ognuno è unico. Queste sono alcune delle aree in cui
             offro un supporto mirato e compassionevole.
           </p>
@@ -70,20 +70,20 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-white/15 backdrop-blur-sm border border-white/15 rounded-2xl p-8 hover:border-white/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"
+              className="group bg-forest/4 border border-forest/10 rounded-2xl p-8 hover:border-forest/20 hover:-translate-y-1 hover:shadow-sm transition-all duration-300 cursor-default"
             >
               {/* Icon circle */}
-              <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-cream mb-6">
+              <div className="w-10 h-10 rounded-full bg-forest/10 flex items-center justify-center text-forest mb-6">
                 {service.icon}
               </div>
 
               {/* Title */}
-              <h3 className="font-cormorant text-2xl font-semibold text-cream mb-3">
+              <h3 className="font-cormorant text-2xl font-semibold text-forest mb-3">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="font-dm-sans text-sm leading-relaxed text-cream/65">
+              <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
                 {service.description}
               </p>
             </div>

@@ -1,5 +1,7 @@
+"use client";
+
 export default function Contact() {
-  const whatsappNumber = "390212345678"; // +39 02 1234 5678
+  const whatsappNumber = "390212345678";
   const whatsappMessage = encodeURIComponent(
     "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita."
   );
@@ -7,44 +9,111 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-sage py-28 md:py-36">
-      <div className="max-w-2xl mx-auto px-6 flex flex-col items-center text-center">
+      <div className="max-w-xl mx-auto px-6">
 
-        {/* Eyebrow */}
-        <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-cream/60 mb-5">
-          Contattami
-        </p>
-
-        {/* Heading */}
-        <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-cream leading-tight mb-6">
-          Pronta a fare il primo passo?
-        </h2>
-
-        {/* Subtext */}
-        <p className="font-dm-sans text-sm leading-relaxed text-cream/70 max-w-md mb-12">
-          Spesso il passo più difficile è quello iniziale. Scrivimi su
-          WhatsApp e ti risponderò entro un giorno lavorativo —
-          senza nessun impegno.
-        </p>
-
-        {/* WhatsApp CTA */}
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 font-dm-sans text-sm text-sage bg-cream rounded-full px-8 py-4 transition-all duration-200 hover:bg-mist hover:scale-[1.02]"
-        >
-          <WhatsAppIcon />
-          Scrivimi su WhatsApp
-        </a>
-
-        {/* Divider + note */}
-        <div className="mt-16 flex flex-col items-center gap-4">
-          <div className="w-16 h-px bg-cream/25" />
-          <p className="font-dm-sans text-xs tracking-wide text-cream/55 italic">
-            Tutte le conversazioni sono riservate. Le prime richieste di contatto
-            non costituiscono un rapporto terapeutico.
+        {/* Header */}
+        <div className="text-center mb-12">
+          <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
+            Contatti
+          </p>
+          <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight mb-5">
+            Pronta a fare il primo passo?
+          </h2>
+          <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
+            Spesso il passo più difficile è quello iniziale. Scrivimi e ti
+            risponderò entro un giorno lavorativo.
           </p>
         </div>
+
+        {/* Form */}
+        <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+
+          {/* Nome */}
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="nome"
+              className="font-dm-sans text-xs tracking-wide text-forest/60"
+            >
+              Nome
+            </label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              autoComplete="name"
+              placeholder="Il tuo nome"
+              className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="email"
+              className="font-dm-sans text-xs tracking-wide text-forest/60"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              placeholder="la.tua@email.com"
+              className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10"
+            />
+          </div>
+
+          {/* Messaggio */}
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="messaggio"
+              className="font-dm-sans text-xs tracking-wide text-forest/60"
+            >
+              Messaggio
+            </label>
+            <textarea
+              id="messaggio"
+              name="messaggio"
+              rows={4}
+              placeholder="Raccontami come posso aiutarti..."
+              className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10 resize-none"
+            />
+          </div>
+
+          {/* Submit */}
+          <button
+            type="submit"
+            className="mt-2 w-full font-dm-sans text-sm text-cream bg-forest rounded-full px-7 py-3.5 transition-all duration-200 hover:bg-forest/85"
+          >
+            Invia messaggio
+          </button>
+        </form>
+
+        {/* Secondary WhatsApp option */}
+        <div className="mt-10 flex flex-col items-center gap-5">
+          <div className="flex items-center gap-3 text-forest/25">
+            <div className="flex-1 h-px bg-forest/15" />
+            <span className="font-dm-sans text-xs">oppure</span>
+            <div className="flex-1 h-px bg-forest/15" />
+          </div>
+
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-dm-sans text-sm text-forest/55 hover:text-forest transition-colors duration-200"
+          >
+            <WhatsAppIcon />
+            Scrivimi direttamente su WhatsApp
+          </a>
+        </div>
+
+        {/* Disclaimer */}
+        <p className="mt-10 font-dm-sans text-xs text-center text-forest/35 italic leading-relaxed">
+          Tutte le conversazioni sono riservate. Le prime richieste di contatto
+          non costituiscono un rapporto terapeutico.
+        </p>
 
       </div>
     </section>
