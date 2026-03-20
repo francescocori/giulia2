@@ -15,7 +15,7 @@ export default function FloatingWhatsApp() {
 
   const whatsappNumber = "390212345678";
   const whatsappMessage = encodeURIComponent(
-    "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita."
+    "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita.",
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -26,14 +26,16 @@ export default function FloatingWhatsApp() {
       rel="noopener noreferrer"
       aria-label="Chatta su WhatsApp"
       className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+        visible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >
       {/* Pulse ring */}
-      <span className="absolute inset-0 rounded-full bg-sage/50 animate-ping" />
+      <span className="absolute inset-0 rounded-full bg-forest/50 animate-ping" />
 
       {/* Button */}
-      <span className="relative flex w-14 h-14 rounded-full bg-sage items-center justify-center shadow-lg hover:bg-forest transition-colors duration-200">
+      <span className="relative flex w-14 h-14 rounded-full  items-center justify-center shadow-lg bg-forest transition-colors duration-200">
         <WhatsAppIcon />
       </span>
     </a>
