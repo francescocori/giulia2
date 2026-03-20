@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #FAF6EE;
+  --color-cream: #faf6ee;
   --color-sage: #f1e8dc;
-  --color-rose: #C9897A;
-  --color-gold: #D4AA70;
-  --color-forest: #3D5240;
-  --color-mist: #F0EDE6;
+  --color-rose: #c9897a;
+  --color-gold: #d4aa70;
+  --color-forest: #3d5240;
+  --color-mist: #f0ede6;
 
   --font-cormorant: var(--font-cormorant);
   --font-dm-sans: var(--font-dm-sans);
@@ -33,6 +33,6 @@
   }
 
   body {
-    @apply bg-cream text-forest font-dm-sans overflow-x-hidden;
+    @apply !bg-cream text-forest font-dm-sans overflow-x-hidden;
   }
 }
