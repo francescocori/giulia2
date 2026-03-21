@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#"
-            className={`font-cormorant text-2xl font-semibold tracking-wide transition-colors duration-300 ${
+            className={`font-cormorant text-2xl font-normal tracking-wide transition-colors duration-300 ${
               scrolled ? "text-forest" : "text-forest"
             }`}
           >
@@ -108,7 +108,7 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => setMenuOpen(false)}
-            className="font-cormorant text-2xl font-semibold tracking-wide text-forest"
+            className="font-cormorant text-2xl font-normal tracking-wide text-forest"
           >
             Giulia
           </a>
@@ -145,7 +145,7 @@ export default function Navbar() {
                 style={{
                   transitionDelay: menuOpen ? `${i * 50 + 80}ms` : "0ms",
                 }}
-                className={`font-cormorant text-4xl font-semibold py-2.5 transition-all duration-500 text-forest ${
+                className={`font-cormorant text-4xl font-normal tracking-tight py-2.5 transition-all duration-500 text-forest ${
                   menuOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-4"

@@ -24,7 +24,7 @@ export default function WhoIHelp() {
         </p>
 
         {/* Heading */}
-        <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-cream leading-tight mb-6 max-w-2xl">
+        <h2 className="font-cormorant text-4xl md:text-5xl font-normal text-cream tracking-tight leading-tight mb-6 max-w-2xl">
           Non devi avere tutto chiaro per cominciare
         </h2>
 
@@ -42,7 +42,7 @@ export default function WhoIHelp() {
               key={a.title}
               className="w-56 h-56 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 flex flex-col items-center justify-center text-center px-10"
             >
-              <p className="font-cormorant text-xl font-semibold text-cream mb-2">
+              <p className="font-cormorant text-xl font-normal tracking-tight text-cream mb-2">
                 {a.title}
               </p>
               <p className="font-dm-sans text-xs leading-relaxed text-cream/65">

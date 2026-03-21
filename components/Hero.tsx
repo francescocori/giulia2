@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
 
           {/* Heading */}
-          <h1 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight mb-4 md:mb-6">
+          <h1 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight mb-4 md:mb-6">
             Guarire non è sempre un percorso{" "}
             <em className="italic text-rose">lineare.</em>
           </h1>

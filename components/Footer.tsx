@@ -98,7 +98,7 @@ export default function Footer() {
           </p>
 
           {/* Name */}
-          <p className="font-cormorant text-5xl font-semibold text-cream leading-tight mb-6">
+          <p className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight mb-6">
             Giulia
           </p>
 

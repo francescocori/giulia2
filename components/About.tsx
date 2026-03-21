@@ -19,7 +19,7 @@ export default function About() {
             </p>
 
             {/* Heading */}
-            <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight">
+            <h2 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight">
               Uno spazio sicuro nasce da una connessione autentica
             </h2>
 

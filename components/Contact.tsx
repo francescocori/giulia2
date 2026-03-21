@@ -16,7 +16,7 @@ export default function Contact() {
           <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
             Contatti
           </p>
-          <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight mb-5">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight mb-5">
             Pronta a fare il primo passo?
           </h2>
           <p className="font-dm-sans text-sm leading-relaxed text-forest/55">

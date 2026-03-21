@@ -26,7 +26,7 @@ export default function Steps() {
           <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
             Come funziona
           </p>
-          <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-forest leading-tight">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight">
             Tre semplici passi per cominciare
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function Steps() {
               </span>
 
               {/* Title */}
-              <h3 className="font-cormorant text-2xl font-semibold text-forest mb-3">
+              <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest mb-3">
                 {step.title}
               </h3>
 
