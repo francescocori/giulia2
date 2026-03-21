@@ -55,13 +55,15 @@ export default function Services() {
         {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-          {/* Card 1 — wide (col-span-2), icon top-right */}
+          {/* Card 1 — wide (col-span-2), icon top on mobile / top-right on desktop */}
           <div className="md:col-span-2 bg-forest/4 border border-forest/10 rounded-2xl p-8 hover:border-forest/20 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 cursor-default">
-            <div className="flex items-start justify-between gap-6 mb-6">
-              <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6 mb-6">
+              <div className="md:order-2 shrink-0">
+                <IconBox icon={iconAnsia} />
+              </div>
+              <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest md:order-1">
                 Ansia & Stress
               </h3>
-              <IconBox icon={iconAnsia} />
             </div>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
               Impara a calmare la mente, regolare il sistema nervoso e costruire resilienza di fronte alle pressioni quotidiane.
@@ -90,19 +92,19 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Card 4 — wide (col-span-2), icon left */}
+          {/* Card 4 — wide (col-span-2), same layout as Card 1 */}
           <div className="md:col-span-2 bg-forest/4 border border-forest/10 rounded-2xl p-8 hover:border-forest/20 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 cursor-default">
-            <div className="flex items-start gap-6">
-              <IconBox icon={iconCoppia} />
-              <div>
-                <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest mb-3">
-                  Terapia di coppia
-                </h3>
-                <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
-                  Rafforza la comunicazione, ricostruisci la fiducia e approfondisci il legame attraverso un lavoro relazionale guidato.
-                </p>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6 mb-6">
+              <div className="md:order-2 shrink-0">
+                <IconBox icon={iconCoppia} />
               </div>
+              <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest md:order-1">
+                Terapia di coppia
+              </h3>
             </div>
+            <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
+              Rafforza la comunicazione, ricostruisci la fiducia e approfondisci il legame attraverso un lavoro relazionale guidato.
+            </p>
           </div>
 
         </div>
