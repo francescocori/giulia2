@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[120vh] flex items-center justify-center overflow-hidden rounded-b-[30px] md:rounded-b-[50px]">
+    <section className="relative min-h-[80vh] md:min-h-[110vh] flex items-center justify-center overflow-hidden rounded-b-[30px] md:rounded-b-[50px]">
       {/* Background image */}
       <Image
         src="/images/heroImage.png"
         alt="Calm therapy setting"
         fill
         priority
-        className="object-cover object-top md:object-center"
+        className="object-cover object-bottom md:object-center"
       />
 
       {/* Warm cream overlay */}
