@@ -61,7 +61,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-190 rounded-t-[30px] md:rounded-t-[50px]">
+    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-90 md:min-h-190 rounded-t-[30px] md:rounded-t-[50px]">
       {/* Background image */}
       <Image
         src="/images/footerImage.png"
