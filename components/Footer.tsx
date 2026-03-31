@@ -61,7 +61,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-90 md:min-h-190 rounded-t-[30px] md:rounded-t-[50px]">
+    <footer className="relative flex flex-col items-center justify-center overflow-hidden py-36 min-h-90 md:min-h-180 rounded-t-[30px] md:rounded-t-[50px]">
       {/* Background image */}
       <Image
         src="/images/footerImage.png"
@@ -99,9 +99,15 @@ export default function Footer() {
 
           {/* Name */}
           <div className="mb-6">
-            <span className="font-cormorant italic text-3xl text-cream block">Dott.ssa</span>
-            <span className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight block">Giulia Micaletti</span>
-            <span className="font-dm-sans text-xl leading-relaxed text-cream/90 block mt-1">Psicologa</span>
+            <span className="font-cormorant italic text-3xl text-cream block">
+              Dott.ssa
+            </span>
+            <span className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight block">
+              Giulia Micaletti
+            </span>
+            <span className="font-dm-sans text-xl leading-relaxed text-cream/90 block mt-1">
+              Psicologa
+            </span>
           </div>
 
           {/* Tagline */}
