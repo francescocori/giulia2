@@ -20,25 +20,25 @@ const socials = [
       </svg>
     ),
   },
-  {
-    label: "LinkedIn",
-    href: "#",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-4 h-4"
-      >
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-        <rect x="2" y="9" width="4" height="12" />
-        <circle cx="4" cy="4" r="2" />
-      </svg>
-    ),
-  },
+  // {
+  //   label: "LinkedIn",
+  //   href: "#",
+  //   icon: (
+  //     <svg
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.6"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //       className="w-4 h-4"
+  //     >
+  //       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+  //       <rect x="2" y="9" width="4" height="12" />
+  //       <circle cx="4" cy="4" r="2" />
+  //     </svg>
+  //   ),
+  // },
   {
     label: "Email",
     href: "mailto:hello@giuliatherapy.com",
@@ -99,13 +99,16 @@ export default function Footer() {
 
           {/* Name */}
           <p className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight mb-6">
-            Giulia
+            <p className="italic text-3xl">Dott.ssa </p>
+            Giulia Micaletti
+            <p className="font-dm-sans text-xl leading-relaxed text-cream/90 mb-8">
+              Psicologa
+            </p>
           </p>
 
           {/* Tagline */}
           <p className="font-dm-sans text-sm leading-relaxed text-cream/90 mb-8">
-            Terapia per il reale e l&apos;incerto — uno spazio per rallentare,
-            essere ascoltati e trovare la propria strada.
+            Uno spazio per essere ascoltati.
           </p>
 
           {/* Social icons */}
@@ -125,8 +128,8 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="font-dm-sans text-[11px] text-cream/85 tracking-wide">
-          © {new Date().getFullYear()} Giulia Therapy. Tutti i diritti
-          riservati.
+          © {new Date().getFullYear()} Giulia Micaletti Psicologa. Tutti i
+          diritti riservati.
         </p>
       </div>
     </footer>

@@ -3,14 +3,13 @@
 export default function Contact() {
   const whatsappNumber = "390212345678";
   const whatsappMessage = encodeURIComponent(
-    "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita."
+    "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita.",
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <section id="contact" className="bg-sage py-28 md:py-36">
       <div className="max-w-xl mx-auto px-6">
-
         {/* Header */}
         <div className="text-center mb-12">
           <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
@@ -26,8 +25,10 @@ export default function Contact() {
         </div>
 
         {/* Form */}
-        <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
-
+        <form
+          className="flex flex-col gap-5"
+          onSubmit={(e) => e.preventDefault()}
+        >
           {/* Nome */}
           <div className="flex flex-col gap-1.5">
             <label
@@ -111,10 +112,10 @@ export default function Contact() {
 
         {/* Disclaimer */}
         <p className="mt-10 font-dm-sans text-xs text-center text-forest/35 italic leading-relaxed">
-          Tutte le conversazioni sono riservate. Le prime richieste di contatto
-          non costituiscono un rapporto terapeutico.
+          Tutte le conversazioni sono riservate. Contattarmi è solo un primo
+          passo, senza nessun impegno. Sessioni in videochiamata, da qualsiasi
+          parte d'Italia e dall'estero.
         </p>
-
       </div>
     </section>
   );

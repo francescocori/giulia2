@@ -13,7 +13,7 @@ const steps = [
   {
     number: "03",
     title: "Iniziamo insieme",
-    description: "Iniziamo il tuo percorso personalizzato.",
+    description: "Iniziamo il tuo percorso personalizzato online.",
   },
 ];
 
