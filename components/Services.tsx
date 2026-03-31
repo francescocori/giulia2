@@ -206,8 +206,8 @@ export default function Services() {
             </p>
             <div className="mt-auto pt-6 flex flex-wrap gap-2">
               <Tag label="Esperienze difficili" />
-              <Tag label="Elaborazione del dolore" />
               <Tag label="Stress emotivo" />
+              <Tag label="Elaborazione del dolore" />
             </div>
           </div>
 
