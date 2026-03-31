@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Chi sono", href: "#about" },
@@ -10,6 +11,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const linkPrefix = pathname === "/" ? "" : "/";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,7 +38,7 @@ export default function Navbar() {
         <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between ">
           {/* Mobile logo — visible only on mobile */}
           <a
-            href="#"
+            href="/"
             className="md:hidden font-cormorant text-2xl font-normal tracking-wide text-forest"
           >
             Giulia
@@ -43,16 +46,10 @@ export default function Navbar() {
 
           {/* Desktop frosted pill — logo + links + CTA all inside */}
           <div className="hidden md:flex items-center justify-between border border-white/30 rounded-full px-3 py-3 mx-auto w-full bg-sage shadow-lg">
-            {/* --color-cream: #faf6ee;
-  --color-sage: #f1e8dc;
-  --color-rose: #c9897a;
-  --color-gold: #d4aa70;
-  --color-forest: #3d5240;
-  --color-mist: #f0ede6; */}
             {/* Logo — far left */}
             <div className="flex-1 flex justify-start">
               <a
-                href="#"
+                href="/"
                 className="font-cormorant text-2xl font-normal tracking-wide text-forest pl-3"
               >
                 Giulia
@@ -65,7 +62,7 @@ export default function Navbar() {
                 {navLinks.map((link) => (
                   <a
                     key={link.label}
-                    href={link.href}
+                    href={`${linkPrefix}${link.href}`}
                     className="font-dm-sans text-md text-forest hover:text-forest transition-colors duration-200"
                   >
                     {link.label}
@@ -77,7 +74,7 @@ export default function Navbar() {
             {/* CTA — far right */}
             <div className="flex-1 flex justify-end">
               <a
-                href="#contact"
+                href={`${linkPrefix}#contact`}
                 className="font-dm-sans text-sm rounded-full px-5 py-2 transition-all duration-200 text-cream bg-forest hover:bg-forest/85"
               >
                 Prenota una chiamata
@@ -122,7 +119,7 @@ export default function Navbar() {
         {/* Panel top bar — mirrors header layout */}
         <div className="px-6 py-5 flex items-center justify-between">
           <a
-            href="#"
+            href="/"
             onClick={() => setMenuOpen(false)}
             className="font-cormorant text-2xl font-normal tracking-wide text-forest"
           >
@@ -156,7 +153,7 @@ export default function Navbar() {
             {navLinks.map((link, i) => (
               <a
                 key={link.label}
-                href={link.href}
+                href={`${linkPrefix}${link.href}`}
                 onClick={() => setMenuOpen(false)}
                 style={{
                   transitionDelay: menuOpen ? `${i * 50 + 80}ms` : "0ms",
@@ -174,7 +171,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="#contact"
+            href={`${linkPrefix}#contact`}
             onClick={() => setMenuOpen(false)}
             style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
             className={`font-dm-sans text-sm rounded-full px-6 py-3.5 text-center transition-all duration-500 self-start text-sage bg-forest hover:bg-mist ${

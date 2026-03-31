@@ -43,6 +43,16 @@ export default function About() {
               te. Uno spazio aperto, inclusivo e accogliente verso la tua
               identità e la tua storia.
             </p>
+
+            <div className="pt-2">
+              <a
+                href="/chi-sono"
+                className="inline-flex items-center gap-1.5 font-dm-sans text-sm px-5 py-2.5 rounded-full border border-forest/20 text-forest/70 hover:border-forest/40 hover:text-forest transition-all duration-200"
+              >
+                Scopri di più
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

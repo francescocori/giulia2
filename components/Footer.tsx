@@ -98,13 +98,11 @@ export default function Footer() {
           </p>
 
           {/* Name */}
-          <p className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight mb-6">
-            <p className="italic text-3xl">Dott.ssa </p>
-            Giulia Micaletti
-            <p className="font-dm-sans text-xl leading-relaxed text-cream/90 mb-8">
-              Psicologa
-            </p>
-          </p>
+          <div className="mb-6">
+            <span className="font-cormorant italic text-3xl text-cream block">Dott.ssa</span>
+            <span className="font-cormorant text-5xl font-normal text-cream tracking-tight leading-tight block">Giulia Micaletti</span>
+            <span className="font-dm-sans text-xl leading-relaxed text-cream/90 block mt-1">Psicologa</span>
+          </div>
 
           {/* Tagline */}
           <p className="font-dm-sans text-sm leading-relaxed text-cream/90 mb-8">
