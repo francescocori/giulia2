@@ -28,7 +28,7 @@ export default function Hero() {
 
           {/* Heading */}
           <h1 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight mb-4 md:mb-6">
-            Guarire non è sempre un percorso{" "}
+            Riconoscersi <br /> non è sempre un percorso{" "}
             <em className="italic text-rose">lineare.</em>
           </h1>
 
@@ -43,7 +43,7 @@ export default function Hero() {
             href="#contact"
             className="inline-block font-dm-sans text-sm text-cream rounded-full px-8 py-2.5 md:py-3 transition-all duration-200 bg-forest"
           >
-            Prenota una chiamata gratuita
+            Contattami
           </a>
         </div>
       </div>

@@ -25,15 +25,23 @@ export default function About() {
 
             {/* Bio */}
             <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
-              Sono una psicologa clinica abilitata con oltre dieci anni di esperienza
-              nel supportare persone che affrontano ansia, burnout, lutto e cambiamenti
-              di vita. Il mio approccio è caldo, privo di giudizio e fondato sulla
-              convinzione che la guarigione avviene nella relazione.
+              Mi occupo di supporto psicologico, accompagnando le persone nei
+              momenti di fragilità, cambiamento o nella ricerca di una maggiore
+              comprensione di sé, quando ciò che si sta vivendo è difficile da
+              definire.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
-              Che tu stia attraversando un momento difficile o ti senta semplicemente
-              bloccato, ti offro uno spazio dove rallentare, essere ascoltato e
-              ricominciare a connetterti con te stesso — ai tuoi tempi.
+              A volte si può percepire confusione o provare una sensazione che
+              non trova spazio altrove. Anche senza una difficoltà precisa può
+              nascere il desiderio di dedicare uno spazio per sé. In altri
+              momenti, invece, il bisogno è più definito: fermarsi, comprendersi
+              meglio, affrontare una situazione complessa o (ri)trovare una
+              direzione.
+            </p>
+            <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
+              Questo può essere uno spazio di supporto in cui prenderti cura di
+              te. Uno spazio aperto, inclusivo e accogliente verso la tua
+              identità e la tua storia.
             </p>
           </div>
         </div>
