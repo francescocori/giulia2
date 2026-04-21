@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Chi sono", href: "#about" },
-  { label: "Servizi", href: "#services" },
-  { label: "Come funziona", href: "#come-funziona" },
+  { label: "Percorsi", href: "#services" },
+  { label: "Cosa aspettarsi", href: "#come-funziona" },
   { label: "Contatti", href: "#contact" },
 ];
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                   <a
                     key={link.label}
                     href={`${linkPrefix}${link.href}`}
-                    className="font-dm-sans text-md text-forest hover:text-forest transition-colors duration-200"
+                    className="font-dm-sans text-md text-forest hover:text-forest transition-colors duration-200 whitespace-nowrap"
                   >
                     {link.label}
                   </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 href={`${linkPrefix}#contact`}
                 className="font-dm-sans text-sm rounded-full px-5 py-2 transition-all duration-200 text-cream bg-forest hover:bg-forest/85"
               >
-                Prenota una chiamata
+                Contattami
               </a>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function Navbar() {
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
             }`}
           >
-            Prenota una chiamata
+            Contattami
           </a>
         </nav>
       </div>

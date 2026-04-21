@@ -21,11 +21,6 @@ export default function Hero() {
       {/* Frosted glass card */}
       <div className="relative z-20 mx-6 animate-fade-in">
         <div className="backdrop-blur-xs rounded-[64px] px-8 py-10 md:px-12 md:py-14 max-w-md text-center mb-[30%] lg:mb-[40%]">
-          {/* Eyebrow */}
-          <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-sage mb-4 md:mb-6">
-            Terapia &amp; Benessere
-          </p>
-
           {/* Heading */}
           <h1 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight mb-4 md:mb-6">
             Riconoscersi <br /> non è sempre un percorso{" "}
@@ -34,8 +29,8 @@ export default function Hero() {
 
           {/* Subheading */}
           <p className="font-dm-sans text-sm leading-relaxed text-forest/70 mb-6 md:mb-8">
-            Non devi affrontarlo da solo. La terapia è uno spazio per
-            rallentare, ritrovarti e trovare la tua strada.
+            Il supporto psicologico è uno spazio sicuro in cui puoi fermarti,
+            capire cosa senti e trovare la tua direzione.
           </p>
 
           {/* CTA */}

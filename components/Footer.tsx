@@ -93,9 +93,7 @@ export default function Footer() {
       <div className="relative z-30 flex flex-col items-center gap-8">
         <div className=" rounded-[64px] px-12 py-14 max-w-md text-center">
           {/* Eyebrow */}
-          <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-cream/90 mb-6">
-            Terapia &amp; Benessere
-          </p>
+          {/* <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-cream/90 mb-6"></p> */}
 
           {/* Name */}
           <div className="mb-6">

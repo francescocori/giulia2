@@ -24,7 +24,7 @@ export default function Steps() {
         {/* Header */}
         <div className="text-center mb-20 md:mb-28">
           <p className="font-dm-sans text-xs tracking-[0.2em] uppercase text-forest/40 mb-4">
-            Come funziona
+            Cosa aspettarsi
           </p>
 
           <h2 className="font-cormorant text-4xl md:text-5xl font-normal tracking-tight text-forest mb-5">

@@ -161,6 +161,10 @@ export default function Services() {
               Per chi sente il bisogno di rallentare, ritrovare il respiro e
               sviluppare una presenza più consapevole nel quotidiano.
             </p>
+            <div className="mt-auto pt-6 flex flex-wrap gap-2">
+              <Tag label="Consapevolezza" />
+              <Tag label="Calma" />
+            </div>
           </div>
 
           {/* ROW 2 */}
@@ -172,8 +176,8 @@ export default function Services() {
               Scuola e università
             </h3>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/55 mb-4">
-              Supporto a studenti che vivono ansia, insicurezza o difficoltà nel
-              percorso scolastico, inclusi i ragazzi con DSA.
+              Supporto a studenti che vivono ansia, insicurezza, frustrazione e
+              difficoltà nel percorso scolastico, inclusi i ragazzi con DSA.
             </p>
             <div className="mt-auto pt-6 flex flex-wrap gap-2">
               <Tag label="Metodo di studio" />
@@ -188,10 +192,16 @@ export default function Services() {
             <h3 className="font-cormorant text-2xl font-normal tracking-tight text-forest mt-6 mb-3">
               Relazioni e dinamiche interpersonali
             </h3>
-            <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
-              Difficoltà relazionali, dipendenza affettiva, gestione dei
-              conflitti e comunicazione nei legami personali e sociali.
+            <p className="font-dm-sans text-sm leading-relaxed text-forest/55 mb-10">
+              Difficoltà nei legami personali e nella gestione delle relazioni,
+              presenti e passate.
             </p>
+            <div className="mt-auto pt-6 flex flex-wrap gap-2">
+              <Tag label="Dipendenza" />
+              <Tag label="Relazioni" />
+              <Tag label="Conflitti" />
+              <Tag label="Comunicazione" />
+            </div>
           </div>
 
           {/* Card 5 — Vulnerabilità (narrow, 1/3) */}
@@ -202,7 +212,7 @@ export default function Services() {
             </h3>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/55 mb-4">
               Uno spazio sicuro per elaborare esperienze difficili, vissuti
-              dolorosi e momenti di forte stress emotivo, ai propri tempi.
+              dolorosi e momenti di forte stress emotivo.
             </p>
             <div className="mt-auto pt-6 flex flex-wrap gap-2">
               <Tag label="Esperienze difficili" />
@@ -224,6 +234,9 @@ export default function Services() {
               lingue e contesti, studenti o lavoratori internazionali e persone
               in mobilità in Italia o all&#39;estero
             </p>
+            <div className="mt-auto pt-6 flex flex-wrap gap-2">
+              <Tag label="Colloqui in Spagnolo" />
+            </div>
           </div>
           {/* Card 7 — Cambiamento, scelte e identità  */}
           <div className="md:col-span-2 flex flex-col bg-forest/4 border border-forest/10 rounded-2xl p-8 hover:border-forest/20 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 cursor-default">

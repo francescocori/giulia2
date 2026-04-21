@@ -52,88 +52,58 @@ export default function ChiSono() {
             Un percorso che nasce dall&apos;ascolto
           </h1>
 
-          <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
+          {/* <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
             Psicologa iscritta all&apos;Albo della Regione Abruzzo, con una
             formazione in psicologia applicata ai contesti della salute, del
             lavoro e giuridico-forense.
-          </p>
+          </p> */}
         </div>
       </section>
 
       {/* 2. Two-column content section */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+        <div className="">
           {/* Left — prose */}
           <div className="md:col-span-2">
             <p className="font-dm-sans text-sm leading-relaxed text-forest/65 mb-6">
-              Sono una psicologa iscritta all&apos;Albo della Regione Abruzzo,
-              con una formazione in psicologia applicata ai contesti della
-              salute, del lavoro e giuridico-forense (Università La Sapienza di
-              Roma). Nel tempo ho maturato esperienza in contesti diversi,
-              lavorando a contatto con situazioni di vulnerabilità e in realtà
-              dedicate al supporto di persone che attraversano momenti complessi
-              dal punto di vista emotivo e relazionale.
+              Sono una psicologa iscritta all'Albo della Regione Abruzzo, con
+              una formazione in psicologia applicata ai contesti della salute,
+              del lavoro e giuridico-forense (Università La Sapienza di Roma).
+              Nel tempo ho maturato esperienza in contesti diversi, lavorando a
+              contatto con situazioni di vulnerabilità e in realtà dedicate al
+              supporto di persone che attraversano momenti complessi dal punto
+              di vista emotivo e relazionale.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/65 mb-6">
-              Nell&apos;ambito educativo ho lavorato come docente di sostegno e
-              come Tutor DSA, accompagnando studentesse e studenti nella
-              costruzione di un metodo di studio personale, nel potenziamento
-              delle proprie abilità e nello sviluppo di una maggiore fiducia in
-              sé. Ho inoltre svolto interventi domiciliari a sostegno di minori
-              e famiglie e collaborato nella conduzione di laboratori di gioco e
-              condivisione.
+              Nell’ambito educativo ho lavorato come docente di sostegno e come
+              Tutor DSA (Disturbi Specifici dell’Apprendimento), accompagnando
+              studenti e studentesse, anche universitari, nella costruzione di
+              un metodo di studio personale, nel potenziamento delle proprie
+              abilità e nello sviluppo di una maggiore fiducia nelle proprie
+              capacità e autostima. Ho inoltre svolto interventi domiciliari a
+              sostegno di minori e famiglie e collaborato nell'organizzazione e
+              conduzione di laboratori di gioco e condivisione, pensati per
+              favorire apprendimento ed espressione.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/65 mb-6">
-              Collaboro con associazioni che si occupano di violenza di genere e
-              centri antiviolenza, dedicandomi all&apos;accompagnamento in
-              percorsi di ascolto, orientamento e sostegno psicologico. Ho
-              maturato una solida formazione ed esperienza in questo ambito,
-              arricchita dal tirocinio post-laurea presso un&apos;associazione
-              attiva sul tema a livello internazionale.
+              Attualmente sono coinvolta nello sviluppo di attività ed
+              interventi psico-educativi nell'ambito progettuale. Parallelamente
+              collaboro con associazioni che si occupano di violenza di genere e
+              centri antiviolenza, in cui mi dedico all'accompagnamento in
+              percorsi di ascolto, orientamento e sostegno psicologico. In
+              questi contesti ho maturato una solida formazione ed esperienza,
+              arricchita anche dal tirocinio post-laurea presso un'associazione
+              attiva e impegnata sul tema a livello internazionale.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/65 mb-6">
-              Gran parte del mio percorso si è svolto all&apos;estero — in
-              Spagna, Portogallo e Argentina — dove ho avuto modo di
-              confrontarmi con realtà sociali e contesti culturali diversi.
-              Queste esperienze arricchiscono oggi il mio modo di ascoltare e
+              Gran parte del mio percorso si è svolto all'estero - Spagna,
+              Portogallo e Argentina, dove ho avuto modo di confrontarmi e
+              lavorare con realtà sociali e diversi contesti culturali. Queste
+              esperienze arricchiscono oggi il mio modo di ascoltare e
               comprendere. Offro la possibilità di svolgere colloqui in lingua
-              spagnola, per chi si sente più a proprio agio ad esprimersi in
-              quella lingua.
+              Spagnola, per tutti coloro che si sentono a proprio agio ad
+              esprimersi in questa lingua.
             </p>
-          </div>
-
-          {/* Right — sidebar */}
-          <div className="md:col-span-1">
-            <div className="bg-forest/[0.04] border border-forest/10 rounded-2xl p-8 sticky top-8">
-              <div>
-                <p className="font-dm-sans text-[10px] tracking-widest uppercase text-forest/35 mb-3">
-                  Formazione
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    "La Sapienza · Roma",
-                    "Albo Regione Abruzzo",
-                    "Mediatrice Interculturale",
-                  ].map((tag) => (
-                    <Tag key={tag} label={tag} />
-                  ))}
-                </div>
-              </div>
-              <SidebarSection
-                label="Approccio"
-                tags={[
-                  "Mindfulness",
-                  "Training Autogeno",
-                  "Psico-educativo",
-                  "Interculturale",
-                ]}
-              />
-              <SidebarSection label="Lingue" tags={["Italiano", "Spagnolo"]} />
-              <SidebarSection
-                label="Sessioni"
-                tags={["Online", "Tutta Italia", "Dall'estero"]}
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -142,9 +112,9 @@ export default function ChiSono() {
       <div className="border-t border-forest/10 py-16 px-6">
         <blockquote className="max-w-2xl mx-auto text-center">
           <p className="font-cormorant text-2xl md:text-3xl font-normal text-forest/70 leading-relaxed italic">
-            &ldquo;Credo nell&apos;importanza di avere uno spazio in cui potersi
-            connettere con sé, riconoscere le proprie risorse e lasciarle
-            fiorire.&rdquo;
+            &ldquo;Credo nell'importanza di avere uno spazio in cui poter
+            connettersi con sè, riconoscere le proprie risorse e lasciarle
+            fiorire, per costruire una vita in cui potersi rispecchiare.&rdquo;
           </p>
         </blockquote>
       </div>
@@ -162,13 +132,14 @@ export default function ChiSono() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-forest/[0.04] border border-forest/10 rounded-2xl p-8">
               <h3 className="font-cormorant text-2xl font-normal text-forest mb-4">
-                Strumenti di consapevolezza
+                Consapevolezza
               </h3>
               <p className="font-dm-sans text-sm leading-relaxed text-forest/65">
-                Mindfulness e training autogeno sono pratiche che possono
-                accompagnare il percorso. Non è necessaria alcuna esperienza
-                pregressa: si adattano alla persona, a ogni età e ai diversi
-                momenti di vita.
+                Nel percorso può esserci spazio anche per strumenti orientati
+                alla consapevolezza e alla gestione dello stress, come pratiche
+                di Mindfulness e Training Autogeno. Non è necessario avere
+                esperienze pregresse: le pratiche si adattano alla persona, ad
+                ogni età e ai diversi momenti di vita.
               </p>
             </div>
 
@@ -177,10 +148,11 @@ export default function ChiSono() {
                 Sguardo interculturale
               </h3>
               <p className="font-dm-sans text-sm leading-relaxed text-forest/65">
-                Sto conseguendo la qualifica in Mediatrice Interculturale. Ogni
-                vissuto prende forma dentro un ambiente e una cultura: tenere
-                insieme la persona e il suo mondo è parte del mio modo di
-                lavorare.
+                Sto conseguendo la qualifica in Mediatrice Interculturale,
+                percorso che si intreccia con il mio pensiero: ogni vissuto
+                prende forma dentro un ambiente e una cultura; tenere insieme la
+                persona e il suo mondo, riconoscendo il valore dei significati
+                che ciascuno porta con sè, è parte del mio modo di lavorare.
               </p>
             </div>
 
@@ -189,9 +161,10 @@ export default function ChiSono() {
                 Aggiornamento continuo
               </h3>
               <p className="font-dm-sans text-sm leading-relaxed text-forest/65">
-                Il mio lavoro si nutre di curiosità e aggiornamento costante
-                verso nuovi strumenti e prospettive. Credo in una pratica
-                clinica che sappia evolvere insieme alle persone che incontra.
+                Il mio lavoro si nutre di curiosità e di un aggiornamento
+                costante verso nuovi strumenti e prospettive. Credo in una
+                pratica che sappia evolvere insieme alle persone che incontra,
+                rispettandone i tempi, i bisogni e l’unicità.
               </p>
             </div>
           </div>

@@ -27,16 +27,14 @@ export default function About() {
             <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
               Mi occupo di supporto psicologico, accompagnando le persone nei
               momenti di fragilità, cambiamento o nella ricerca di una maggiore
-              comprensione di sé, quando ciò che si sta vivendo è difficile da
-              definire.
+              comprensione di sé.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
               A volte si può percepire confusione o provare una sensazione che
               non trova spazio altrove. Anche senza una difficoltà precisa può
               nascere il desiderio di dedicare uno spazio per sé. In altri
-              momenti, invece, il bisogno è più definito: fermarsi, comprendersi
-              meglio, affrontare una situazione complessa o (ri)trovare una
-              direzione.
+              momenti, invece, il bisogno è più definito: comprendersi meglio,
+              affrontare una situazione complessa o (ri)trovare una direzione.
             </p>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/60">
               Questo può essere uno spazio di supporto in cui prenderti cura di
