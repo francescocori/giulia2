@@ -139,7 +139,10 @@ export default function Services() {
             <p className="font-dm-sans text-sm leading-relaxed text-forest/55 mb-4">
               Un supporto per ritrovare equilibrio e consapevolezza, anche in
               presenza di condizioni di salute che influenzano la qualità della
-              vita.
+              vita. Un percorso che accompagna nella comprensione e gestione
+              delle emozioni, aiutando a sviluppare maggiore stabilità interiore
+              e resilienza. Attraverso strumenti pratici e momenti di ascolto,
+              favorisce una connessione più profonda con sé stessi.
             </p>
             <div className="mt-auto pt-6 flex flex-wrap gap-2">
               <Tag label="Ansia" />
@@ -249,15 +252,17 @@ export default function Services() {
               </h3>
             </div>
             <p className="font-dm-sans text-sm leading-relaxed text-forest/55 mb-4">
-              Percorsi di esplorazione dell&apos;identità, momenti di
-              transizione, ricerca di direzione personale o lavorativa,
-              difficoltà nel prendere decisioni.
+              Percorsi di esplorazione dell’identità, dedicati a chi sta
+              attraversando momenti di transizione o sente il bisogno di
+              ritrovare una direzione personale o lavorativa. Uno spazio per
+              fermarsi, riflettere e dare significato ai cambiamenti,
+              comprendendo meglio i propri bisogni, valori e desideri. Il
+              percorso sostiene anche nelle difficoltà legate al prendere
+              decisioni, aiutando a sviluppare maggiore chiarezza e fiducia.
             </p>
             <div className="mt-auto pt-6 flex flex-wrap gap-2">
               <Tag label="Identità personale" />
-              <Tag label="Transizioni di vita" />
               <Tag label="Orientamento formativo e lavorativo" />
-              <Tag label="Incertezza e dubbio" />
               <Tag label="Prendere decisioni" />
             </div>
           </div>

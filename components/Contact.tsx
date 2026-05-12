@@ -16,11 +16,11 @@ export default function Contact() {
             Contatti
           </p>
           <h2 className="font-cormorant text-4xl md:text-5xl font-normal text-forest tracking-tight leading-tight mb-5">
-            Pronta a fare il primo passo?
+            Possiamo partire da qui
           </h2>
           <p className="font-dm-sans text-sm leading-relaxed text-forest/55">
-            Spesso il passo più difficile è quello iniziale. Scrivimi e ti
-            risponderò entro un giorno lavorativo.
+            Spesso il passo più difficile è quello iniziale.
+            <br /> Scrivimi e ti risponderò entro un giorno lavorativo.
           </p>
         </div>
 
