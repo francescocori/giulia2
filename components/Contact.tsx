@@ -1,11 +1,66 @@
 "use client";
 
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+
+type FormValues = {
+  nome: string;
+  email: string;
+  messaggio: string;
+  _honeypot: string;
+};
+
 export default function Contact() {
   const whatsappNumber = "393883409338";
   const whatsappMessage = encodeURIComponent(
     "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita.",
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+  const [globalError, setGlobalError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>();
+
+  const onSubmit = async (data: FormValues) => {
+    setGlobalError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        reset();
+        return;
+      }
+
+      const json = await res.json();
+
+      if (res.status === 422 && json.errors) {
+        Object.entries(json.errors as Record<string, string>).forEach(
+          ([field, message]) => {
+            setError(field as keyof FormValues, { message });
+          }
+        );
+        return;
+      }
+
+      setGlobalError(
+        json.message ?? "Errore nell'invio. Riprova più tardi."
+      );
+    } catch {
+      setGlobalError("Errore di rete. Controlla la connessione e riprova.");
+    }
+  };
 
   return (
     <section id="contact" className="bg-sage py-28 md:py-36">
@@ -24,11 +79,35 @@ export default function Contact() {
           </p>
         </div>
 
+        {/* Success message */}
+        {success && (
+          <p className="mb-6 font-dm-sans text-sm text-forest/70 text-center">
+            Messaggio inviato! Ti risponderò presto.
+          </p>
+        )}
+
+        {/* Global error banner */}
+        {globalError && (
+          <p className="mb-6 font-dm-sans text-sm text-red-600 text-center">
+            {globalError}
+          </p>
+        )}
+
         {/* Form */}
         <form
           className="flex flex-col gap-5"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
         >
+          {/* Honeypot – hidden from real users */}
+          <input
+            type="text"
+            tabIndex={-1}
+            aria-hidden="true"
+            className="hidden"
+            {...register("_honeypot")}
+          />
+
           {/* Nome */}
           <div className="flex flex-col gap-1.5">
             <label
@@ -39,12 +118,17 @@ export default function Contact() {
             </label>
             <input
               id="nome"
-              name="nome"
               type="text"
               autoComplete="name"
               placeholder="Il tuo nome"
               className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10"
+              {...register("nome")}
             />
+            {errors.nome && (
+              <p className="font-dm-sans text-xs text-red-500">
+                {errors.nome.message}
+              </p>
+            )}
           </div>
 
           {/* Email */}
@@ -57,12 +141,17 @@ export default function Contact() {
             </label>
             <input
               id="email"
-              name="email"
               type="email"
               autoComplete="email"
               placeholder="la.tua@email.com"
               className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10"
+              {...register("email")}
             />
+            {errors.email && (
+              <p className="font-dm-sans text-xs text-red-500">
+                {errors.email.message}
+              </p>
+            )}
           </div>
 
           {/* Messaggio */}
@@ -75,19 +164,25 @@ export default function Contact() {
             </label>
             <textarea
               id="messaggio"
-              name="messaggio"
               rows={4}
               placeholder="Raccontami come posso aiutarti..."
               className="w-full font-dm-sans text-sm text-forest placeholder:text-forest/30 bg-transparent border border-forest/15 rounded-xl px-4 py-3 outline-none transition-all duration-200 focus:border-forest/35 focus:ring-2 focus:ring-forest/10 resize-none"
+              {...register("messaggio")}
             />
+            {errors.messaggio && (
+              <p className="font-dm-sans text-xs text-red-500">
+                {errors.messaggio.message}
+              </p>
+            )}
           </div>
 
           {/* Submit */}
           <button
             type="submit"
-            className="mt-2 w-full font-dm-sans text-sm text-cream bg-forest rounded-full px-7 py-3.5 transition-all duration-200 hover:bg-forest/85"
+            disabled={isSubmitting}
+            className="mt-2 w-full font-dm-sans text-sm text-cream bg-forest rounded-full px-7 py-3.5 transition-all duration-200 hover:bg-forest/85 disabled:opacity-50"
           >
-            Invia messaggio
+            {isSubmitting ? "Invio in corso…" : "Invia messaggio"}
           </button>
         </form>
 

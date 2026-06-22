@@ -37,22 +37,26 @@ export default function Navbar() {
       >
         <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between ">
           {/* Mobile logo — visible only on mobile */}
-          <a
-            href="/"
-            className="md:hidden font-cormorant text-2xl font-normal tracking-wide text-forest"
-          >
-            Giulia
+          <a href="/" className="md:hidden flex flex-col leading-none -space-y-1.5 items-center">
+            <span className="font-cormorant text-2xl font-normal tracking-wide text-forest">
+              Giulia Micaletti
+            </span>
+            <span className="font-dm-sans text-[0.6rem] tracking-[0.18em] uppercase text-forest/50 mt-0">
+              Supporto Psicologico
+            </span>
           </a>
 
           {/* Desktop frosted pill — logo + links + CTA all inside */}
           <div className="hidden md:flex items-center justify-between border border-white/30 rounded-full px-3 py-3 mx-auto w-full bg-sage shadow-lg">
             {/* Logo — far left */}
             <div className="flex-1 flex justify-start">
-              <a
-                href="/"
-                className="font-cormorant text-2xl font-normal tracking-wide text-forest pl-3"
-              >
-                Giulia
+              <a href="/" className="flex flex-col leading-none -space-y-1.5 items-center pl-3">
+                <span className="font-cormorant text-2xl font-normal tracking-wide text-forest">
+                  Giulia Micaletti
+                </span>
+                <span className="font-dm-sans text-[0.6rem] tracking-[0.18em] uppercase text-forest/50 mt-0">
+                  Supporto Psicologico
+                </span>
               </a>
             </div>
 
@@ -118,12 +122,13 @@ export default function Navbar() {
       >
         {/* Panel top bar — mirrors header layout */}
         <div className="px-6 py-5 flex items-center justify-between">
-          <a
-            href="/"
-            onClick={() => setMenuOpen(false)}
-            className="font-cormorant text-2xl font-normal tracking-wide text-forest"
-          >
-            Giulia
+          <a href="/" onClick={() => setMenuOpen(false)} className="flex flex-col leading-none -space-y-1.5 items-center">
+            <span className="font-cormorant text-2xl font-normal tracking-wide text-forest">
+              Giulia Micaletti
+            </span>
+            <span className="font-dm-sans text-[0.6rem] tracking-[0.18em] uppercase text-forest/50 mt-0">
+              Supporto Psicologico
+            </span>
           </a>
 
           <button
