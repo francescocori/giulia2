@@ -1,7 +1,7 @@
 "use client";
 
 export default function Contact() {
-  const whatsappNumber = "390212345678";
+  const whatsappNumber = "393883409338";
   const whatsappMessage = encodeURIComponent(
     "Ciao Giulia, vorrei prenotare una chiamata conoscitiva gratuita.",
   );
